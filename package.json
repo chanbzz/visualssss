@@ -1,0 +1,19 @@
+{
+  "name": "is-palindrome-visualization",
+  "version": "1.0.0",
+  "description": "vanilla js visualization ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "vsv"
+  },
+  "author": "chan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
