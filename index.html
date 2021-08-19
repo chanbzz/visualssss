@@ -60,11 +60,7 @@
         </header>
         <section id="sec-1">
             <div class="container">
-                <div id="full-solution">
-                <p>Here is a full solution to Is Palindrome:</p>
-                <p>
-                </div>
-                <img src="images/is-palindrome.png" alt="solution">
+                <img id='code-image' src="images/is-palindrome.png" alt="solution">
                 <h1>press the button below to step through the code</h1>
                 <a href="#sec-2">
                     <div class="scroll-down"></div>
@@ -97,7 +93,7 @@
                     <p id='setting-pointer' onclick="stepOne()">
                         the pointer variables are set to the first position and last position of the string
                     </p>
-                    <p id='rr-1' onclick="stepOne()"> during our first iteration the if statement compares letter r with letter</p>
+                    <p id='rr-1' onclick="stepOne()">  we compare "r" with "r"</p>
                     
                     <p id='rr-2' onclick="stepOne()"> they are equal! we return true and can continue to our next iteration.</p> 
                     
@@ -109,7 +105,12 @@
 
         <section id="sec-3">
             <div class="container">
+                <p id="increment-a">by incrementing our pointer variables by one we change the pointer's position in the string</p>
+                <button 
+                    id="got-it-a" onclick="stepTwo()"> click me to continue 
+                </button>
                 <ul>
+                    <li>'</li>
                     <li> r </li>
                     <li> a </li>
                     <li> c </li>
@@ -117,7 +118,83 @@
                     <li> c </li>
                     <li> a </li>
                     <li> r </li>
+                    <li>'</li>
                 </ul>
+                <h3 id='pointer-1-3' onclick="stepTwo()">^</h3>
+                <h3 id='pointer-2-3' onclick="stepTwo()">^</h3>
+                <p id="a-move-1">pointer_one += 1 moves our pointer one position to the right</p>
+                <p id='a-move-2'>pointer_two -= 1 moves our pointer one position to the left</p>
+                <p id='compare-a'onclick="stepTwo()" oncli>now we compare "a" with "a"</p> 
+                <p id='equal-a' onclick="stepTwo()"> they are equal! we return true and can continue to our next iteration.</p>
+                <a href="#sec-4"><button id='next-iteration-a' onclick="stepTwo()">Next Iteration</button>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="sec-4">
+            <div class="container">
+                
+                    <p id="increment-c" onclick="stepThree()">we increment our variables again</p>
+                    <button 
+                    id="got-it-c" onclick="stepThree()"> click me to continue 
+                    </button>
+
+                    <ul>
+                    <li>'</li>
+                    <li> r </li>
+                    <li> a </li>
+                    <li> c </li>
+                    <li> e </li>
+                    <li> c </li>
+                    <li> a </li>
+                    <li> r </li>
+                    <li>'</li>
+                </ul>
+                <h3 id='pointer-c' onclick="stepThree()">^</h3>
+                <h3 id= 'pointer-c-2' onclick="stepThree()">^</h3>
+
+                <p id='right-c'>pointer_one += 1 moves our pointer one position to the right</p>
+                <p id='left-c'>pointer_two -= 1 moves our pointer one position to the left</p>
+                <p id='compare-c' onclick="stepThree()">now we compare "c" with "c"</p> 
+                <p id='equal-c' onclick="stepThree()"> they are equal! we return true and can continue to our next iteration.</p>
+                <a href="#sec-5"><button id='next-iteration-c' onclick="stepThree()">Next Iteration</button>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="sec-5">
+            <div class="container">
+                <p id='tricky-c' onclick="stepFour()">this is where things get tricky! </p>
+                <button 
+                    id="got-it-e" onclick="stepFour()"> click me to continue 
+                </button>
+                <ul>
+                    <li>'</li>
+                    <li> r </li>
+                    <li> a </li>
+                    <li> c </li>
+                    <li> e </li>
+                    <li> c </li>
+                    <li> a </li>
+                    <li> r </li>
+                    <li>'</li>
+                </ul>
+                <h3 id='pointer-e' onclick="stepFour()">^</h3>
+                <h3 id='pointer-e-2' onclick="stepFour()">^</h3>
+
+                
+                <p id='loop-e' onclick="stepFour()"> our loop runs on the condition that pointer_one is less than or equal to pointer_two </p>
+                <p id='right-e' onclick="stepFour()">our pointer's are now pointing to the same place in the sequence</p>
+                <p id='left-e' onclick="stepFour()">this means pointer_one now equals pointer_two and will be our last iteration </p> 
+                <p id='compare-e' onclick="stepFour()">we are comparing the same element</p>
+                <p id='equal-e' onclick="stepFour()">"e" equals "e"</p>
+                <p id='statement-e' onclick="stepFour()"> all statements are true so we return true</p>
+                <p id='palindrome-e' onclick="stepFour()">racecar is indeed a palindrome</p>
+                <a href="#sec-1"><button id='smiley-e'> take it from the top :]</button></a>
+
+                
 
             </div>
         </section>
